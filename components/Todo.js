@@ -2,14 +2,21 @@ import React from 'react'
 import { FiMoreVertical } from "react-icons/fi";
 import cx from "classnames";
 import styles from "../styles/Home.module.css";
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 
-export default function Todo({items, setItems, todoItem, setTodoItem, handleEnter, handleDone, handleAdd}) {
+export default function Todo({items, setItems, todoItem, setTodoItem, handleEnter, handleDone, handleAdd, deleteAllList}) {
   return (
     <div>
         <div className="text-gray-400 flex justify-between items-center pt-10">
                 <h1 className="uppercase font-bold tracking-wider">To-Do List</h1>
-                <FiMoreVertical className="text-2xl cursor-pointer"/>
+                <Tooltip className="text-white" title="Delete All Tasks">
+                  <IconButton onClick={deleteAllList}>
+                    <DeleteIcon />
+                  </IconButton>
+                </Tooltip>
             </div>
         <div className="h-0.5 w-full bg-gray-400 mt-5 mb-5"></div>
 

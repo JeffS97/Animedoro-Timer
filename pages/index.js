@@ -64,6 +64,10 @@ export default function index() {
 		setItems(_items);
 	};
 
+	const deleteAllList = () =>{
+		setItems([]);
+	}
+
 	const updateTimeDefaultValue = () => {
 		setPomodoro(pomodoroRef.current.value);
 		setAnime(animeRef.current.value);
@@ -179,6 +183,7 @@ export default function index() {
 					handleEnter={handleEnter}
 					handleDone={handleDone}
 					handleAdd={handleAdd}
+					deleteAllList={deleteAllList}
 					/>
 				<About/>
 				<Alarm ref={alarmRef}/>
