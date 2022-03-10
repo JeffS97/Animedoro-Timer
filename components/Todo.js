@@ -12,7 +12,7 @@ export default function Todo({items, setItems, todoItem, setTodoItem, handleEnte
     <div>
         <div className="text-gray-400 flex justify-between items-center pt-10">
                 <h1 className="uppercase font-bold tracking-wider">To-Do List</h1>
-                <Tooltip className="text-white" title="Delete All Tasks">
+                <Tooltip style={{ color: "white" }} title="Delete All Tasks">
                   <IconButton onClick={deleteAllList}>
                     <DeleteIcon />
                   </IconButton>
