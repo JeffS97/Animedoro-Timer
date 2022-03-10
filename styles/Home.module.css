@@ -1,0 +1,17 @@
+.item {
+    @apply py-3 border border-t-0 border-gray-700 tracking-wide text-white;
+  }
+  
+  .item:first-child {
+    @apply border-t rounded-t tracking-wide text-white;
+  }
+  
+  .item:last-child {
+    @apply rounded-b tracking-wide text-white;
+  }
+  
+  .item.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+
