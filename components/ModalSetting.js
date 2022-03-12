@@ -24,7 +24,7 @@ function ModalSetting({pomodoroRef, animeRef, openSetting, setOpenSetting, updat
             >
 
             <div className="text-gray-400 flex justify-between items-center">
-                <h1 className="uppercase font-bold tracking-wider">Timer Settings</h1>
+                <h1 className="uppercase font-bold tracking-wider">Timer Settings (Minutes)</h1>
                 <FiX className="text-2xl cursor-pointer" onClick={()=>setOpenSetting(false)}/>
             </div>
 

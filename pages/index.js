@@ -7,6 +7,7 @@ import Timer from "../components/Timer"
 import Todo from "../components/Todo";
 import cx from "classnames";
 import { v4 as uuidv4 } from "uuid";
+import Footer from "../components/Footer";
 
 
 export default function index() {
@@ -163,8 +164,11 @@ export default function index() {
 
 	return (
 		<div className="bg-gray-900 min-h-screen font-inter">
-			<div className="max-w-2xl min-h-screen mx-auto">
+			<div className="max-w-4xl mx-auto">
 				<Navigation setOpenSetting={setOpenSetting}/>
+			</div>
+			<div className="max-w-2xl min-h-screen mx-auto">
+				
 				<Timer 
 					stage={stage} 
 					switchStage={switchStage} 
@@ -185,7 +189,8 @@ export default function index() {
 					handleAdd={handleAdd}
 					deleteAllList={deleteAllList}
 					/>
-				<About/>
+				
+				
 				<Alarm ref={alarmRef}/>
 				<ModalSetting 
 					openSetting={openSetting} 
@@ -193,6 +198,13 @@ export default function index() {
 					pomodoroRef={pomodoroRef} 
 					animeRef={animeRef}
 					updateTimeDefaultValue={updateTimeDefaultValue}/>
+			</div>
+			<div className="h-0.5 mx-auto w-9/12 bg-gray-800"></div>
+			<div className="bg-gray-900 font-inter">
+				<div className="max-w-4xl mb-10 mx-auto">
+					<About/>
+				</div>
+					<Footer/>
 			</div>
 		</div>
 	);
