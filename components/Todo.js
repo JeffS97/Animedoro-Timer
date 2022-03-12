@@ -53,7 +53,7 @@ export default function Todo({items, setItems, todoItem, setTodoItem, handleEnte
           ))}
       </ul>
         </div>
-        <div className="h-0.5 w-full bg-gray-400 mt-5 mb-5"></div>
+        <div className="h-0.5 w-full bg-gray-400 mt-5"></div>
     </div>
   )
 }

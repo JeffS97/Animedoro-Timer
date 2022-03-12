@@ -189,8 +189,6 @@ export default function index() {
 					handleAdd={handleAdd}
 					deleteAllList={deleteAllList}
 					/>
-				
-				
 				<Alarm ref={alarmRef}/>
 				<ModalSetting 
 					openSetting={openSetting} 
@@ -200,8 +198,8 @@ export default function index() {
 					updateTimeDefaultValue={updateTimeDefaultValue}/>
 			</div>
 			<div className="h-0.5 mx-auto w-9/12 bg-gray-800"></div>
-			<div className="bg-gray-900 font-inter">
-				<div className="max-w-4xl mb-10 mx-auto">
+			<div className="bg-gray-900 min-h-screen font-inter">
+				<div className="max-w-4xl mx-auto">
 					<About/>
 				</div>
 					<Footer/>
