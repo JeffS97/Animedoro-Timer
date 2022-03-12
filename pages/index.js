@@ -8,6 +8,7 @@ import Todo from "../components/Todo";
 import cx from "classnames";
 import { v4 as uuidv4 } from "uuid";
 import Footer from "../components/Footer";
+import ButtonClick from "../components/ButtonClick";
 
 
 export default function index() {
@@ -28,6 +29,7 @@ export default function index() {
 	const alarmRef = useRef();
 	const pomodoroRef = useRef();
 	const animeRef = useRef();
+	const buttonRef = useRef();
 
 	const handleEnter = (event) => {
 		if (event.key === "Enter") {
@@ -140,6 +142,7 @@ export default function index() {
 	}
 
 	const startTimer = () =>{
+		buttonRef.current.play();
 		setIsTimeUp(false);
 		muteAlarm();
 		setTicking((ticking)=> !ticking);
@@ -190,6 +193,7 @@ export default function index() {
 					deleteAllList={deleteAllList}
 					/>
 				<Alarm ref={alarmRef}/>
+				<ButtonClick ref={buttonRef}/>
 				<ModalSetting 
 					openSetting={openSetting} 
 					setOpenSetting={setOpenSetting} 
