@@ -118,6 +118,12 @@ export default function index() {
 		reset();
 		setIsTimeUp(true);
 		alarmRef.current.play();
+		if(stage==0){
+			setStage(1);
+		}
+		else{
+			setStage(0);
+		}
 	}
 
 	const clockTicking = () => {
