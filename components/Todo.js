@@ -45,7 +45,7 @@ export default function Todo({items, setItems, todoItem, setTodoItem, handleEnte
                       <CheckCircleOutlineIcon />
                 </IconButton>
               </Tooltip>
-              <Tooltip style={{ color: "#6b7280" }} className="mr-5" title="Remove Item"> 
+              <Tooltip style={{ color: "#6b7280", marginRight:'1.25rem'}} title="Remove Item"> 
               <IconButton onClick={() => deleteItem(id)}>
                     <ClearIcon />
               </IconButton>
@@ -70,7 +70,7 @@ export default function Todo({items, setItems, todoItem, setTodoItem, handleEnte
                         <RemoveDoneIcon />
                   </IconButton>
                 </Tooltip>
-                <Tooltip style={{ color: "#6b7280" }} className="mr-5" title="Remove Item">
+                <Tooltip style={{ color: "#6b7280", marginRight:'1.25rem' }} title="Remove Item">
                 <IconButton onClick={() => deleteItem(id)}>
                       <ClearIcon />
                 </IconButton>
