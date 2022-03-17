@@ -40,12 +40,12 @@ export default function Todo({items, setItems, todoItem, setTodoItem, handleEnte
               
               <div className="flex justify-center items-center">
               <span className="ml-4 mx-auto">{message}</span>
-              <Tooltip title="Complete">
+              <Tooltip className="text-gray-400" title="Complete">
                 <IconButton className="text-gray-400" onClick={() => handleDone(id)}>
                       <CheckCircleOutlineIcon />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="Remove Item">
+              <Tooltip className="text-gray-500" title="Remove Item">
               <IconButton className="mr-5 text-gray-500" onClick={() => deleteItem(id)}>
                     <ClearIcon />
               </IconButton>
@@ -65,12 +65,12 @@ export default function Todo({items, setItems, todoItem, setTodoItem, handleEnte
               <div className="flex justify-center items-center">
               <span className="ml-4 mx-auto">{message}</span>
               <div className="flex items-end">
-                <Tooltip title="Uncomplete">
+                <Tooltip className="text-gray-400" title="Uncomplete">
                   <IconButton className="text-gray-400" onClick={() => handleDone(id)}>
                         <RemoveDoneIcon />
                   </IconButton>
                 </Tooltip>
-                <Tooltip style={{ color: "text-white" }} title="Remove Item">
+                <Tooltip className="text-white" style={{ color: "text-white" }} title="Remove Item">
                 <IconButton className="mr-5 text-gray-400" onClick={() => deleteItem(id)}>
                       <ClearIcon />
                 </IconButton>
