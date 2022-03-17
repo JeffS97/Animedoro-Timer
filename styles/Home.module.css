@@ -1,13 +1,13 @@
 .item {
-    @apply py-3 border border-t-0 border-gray-700 tracking-wide text-white capitalize cursor-pointer;
+    @apply py-3 border border-t-0 border-gray-700 tracking-wide text-white capitalize ;
   }
   
   .item:first-child {
-    @apply border-t rounded-t tracking-wide text-white capitalize cursor-pointer;
+    @apply border-t rounded-t tracking-wide text-white capitalize;
   }
   
   .item:last-child {
-    @apply rounded-b tracking-wide text-white capitalize cursor-pointer;
+    @apply rounded-b tracking-wide text-white capitalize;
   }
   
   .item.done {

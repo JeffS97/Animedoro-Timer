@@ -67,6 +67,11 @@ export default function index() {
 		setItems(_items);
 	};
 
+	const deleteItem = (id) => {
+		const newList = items.filter((item) => item.id !== id);
+        setItems(newList);
+	}
+
 	const deleteAllList = () =>{
 		setItems([]);
 	}
@@ -197,6 +202,7 @@ export default function index() {
 					handleDone={handleDone}
 					handleAdd={handleAdd}
 					deleteAllList={deleteAllList}
+					deleteItem={deleteItem}
 					/>
 				<Alarm ref={alarmRef}/>
 				<ButtonClick ref={buttonRef}/>
